@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<style>
+		table{
+			width: 530px;
+			margin-left: 100px;
+			font-weight: 700;
+			border: 1px solid royalblue;
+			border-top: none;
+			background-color:rgba(247,243,247);
+		}
+		caption{
+			border: 1px solid royalblue;
+			border-bottom: none;
+			background-color: rgba(156,207,255);
+			color: red;
+			width: 530px;
+			margin: 0px;
+			text-align: center;	
+		}
+		td{
+			border-bottom:3px solid white;
+		}
+		textarea{
+			overflow-y: scroll;
+		}
+		td:nth-child(2n-1){
+			border-right: 3px solid white;
+		}
+	</style>
+	<body>
+		<table>
+			<caption align="center">信息统计表</caption>
+			<tr>
+				<td align="right">姓名:</td>
+				<td><input type="text"></td>
+			</tr>
+			<tr>
+				<td align="right">年龄:</td>
+				<td><input type="number" name="" id=""></td>
+			</tr>
+			<tr>
+				<td align="right">性别:</td>
+				<td>
+					<input type="radio" value="" />男
+					<input type="radio" value="" />女
+				</td>
+			</tr>
+			<tr>
+				<td align="right">爱好:</td>
+				<td>
+					<input type="checkbox" name="hobby" id="">旅游<br>
+					<input type="checkbox" name="hobby" id="" >登山<br>
+					<input type="checkbox" name="hobby" id="">健身<br>
+					<input type="checkbox" name="hobby" id="">上网<br>
+					<input type="checkbox" name="hobby" id="">游泳<br>
+				</td>
+			</tr>
+			<tr>
+				<td align="right">学历:</td>
+				<td>
+					<select name="degree" id="">
+					    <option value="">--请选择--</option>
+					    <option value="1">专科</option>
+					    <option value="2">本科</option>
+					    <option value="3">硕士</option>
+					    <option value="4">博士及以上</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td align="right">自我介绍:</td>
+				<td>
+					<textarea name="comment" id="" cols="22" rows="5">自我介绍</textarea>
+				</td>
+			</tr>
+			<tr>
+				<td align="right"></td>
+				<td>
+				    <input type="submit">
+				    <input type="reset">
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>
